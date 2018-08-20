@@ -47,9 +47,26 @@ public class LoadingActivity extends Activity {
                             ,Manifest.permission.ACCESS_COARSE_LOCATION
                             ,Manifest.permission.CAMERA
                             ,Manifest.permission.INTERNET},
-                    0);
+                    10);
         }else{
             startLoading();
         }
     }
+    @Override
+    public void onRequestPermissionsResult(int requestCode,
+                                           String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case 10:
+
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    startLoading();
+                } else {
+                    finish();
+                }
+                return;
+        }
+    }
+
+
 }
