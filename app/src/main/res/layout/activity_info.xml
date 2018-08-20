@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Myfont"
+                    android:text="건물설명" />
+
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:spinnerMode="dialog"
+                    android:textColor="@color/black"
+                    android:textSize="5dp" />
+
+                <ImageView
+                    android:id="@+id/b_img1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/bon2"
+
+                    />
+
+                <TextView
+                    android:id="@+id/building_introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1978년 준공된 건물로서 지하 1층 지상 5층 철근콘크리트 구조로 연 면적은 11.331이며 대학본부 및 부속기관, 컴퓨터정보계열, 콘텐츠디자인과, 간호학과, 연구실, 강의실, 실습실, 학생식당 등으로 사용되고 있다." />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Myfont"
+                    android:text="층별현황" />
+
+                <ImageView
+                    android:id="@+id/b_img2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/bon_m"
+                    android:scaleType="fitXY"
+                    />
+
+                <TextView
+                    android:id="@+id/building_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- 5F 콘텐츠디자인과, Global Zone, 간호과 기초간호과학실습실
+                                    \n- 4F 간호학과사무실, 시뮬레이션센터, 기본간호학실습실, 간호학소그룹학습실, PC실습실, 간호학과 Global Zone, 모성간호실습실, 콘텐츠디자인과사무실, CG실습실, PC실습실
+                                    \n- 3F 컴퓨터정보계열사무실, 게임프로그래밍실습실, DB프로그래밍실습실, 애니메이션컨텐츠실습실, 시스템실, 컴퓨터정보계열 Global Zone
+                                    \n- 2F DB프로젝트실습실, 소규모프로젝트실, 컴퓨터정보계열 PC실습실, 총장실, 부총장실, 부속실, 기획처
+                                    \n- 1F 학사운영처, 산학협력단, 취업상담실, 학생복지처, 학사지원처, 원스탑서비스센터, 사회봉사단, 주문식교육추진센터, 예비군대대시스템실, 학보사
+                                    \n- B1 학생휴게실 및 식당" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.1"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/select_bottom_nav"
+        app:itemTextColor="@drawable/select_bottom_nav"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:menu="@menu/bottommenu"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        >
+
+    </android.support.design.widget.BottomNavigationView>
+
+</LinearLayout>

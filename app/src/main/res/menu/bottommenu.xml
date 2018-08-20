@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@mipmap/ic_home"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+
+   <item
+        android:id="@+id/action_info"
+        android:enabled="true"
+        android:icon="@mipmap/ic_info_outline"
+        android:title="Information"
+        app:showAsAction="ifRoom" />
+
+   <item
+        android:id="@+id/action_businfo"
+        android:enabled="true"
+        android:icon="@mipmap/ic_directions_bus"
+        android:title="Bus_Info"
+        app:showAsAction="ifRoom" />
+
+
+   <item
+        android:id="@+id/action_restaurant"
+        android:enabled="true"
+        android:icon="@mipmap/ic_local_dining"
+        android:title="Restaurant"
+        app:showAsAction="ifRoom" />
+
+
+</menu>

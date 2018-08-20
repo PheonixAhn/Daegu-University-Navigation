@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Yeungjin">
+        <item>도착지</item>
+        <item>본관</item>
+        <item>원스탑센터</item>
+        <item>부속유치원</item>
+        <item>정보관</item>
+        <item>연서관</item>
+        <item>백호체육관</item>
+        <item>창조관</item>
+        <item>청문관</item>
+    </string-array>
+</resources>
