@@ -1,7 +1,5 @@
 # YJC-Campus-Map
 
-![loading](./Readme/loading.jpg)
-
 
 
 Daeguの大学校を案内しましょ！ - YJC Campus Map 
